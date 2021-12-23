@@ -8,6 +8,10 @@ export const Page1 = () => {
 
   const onClickDetailA = () => history.push("/page1/detailA");
 
+  const onClickDetailB = () => {
+    history.push("/page1/detailB");
+  };
+
   return (
     <div>
       <h1>Page1</h1>
@@ -16,6 +20,8 @@ export const Page1 = () => {
       <Link to="/page1/detailB">DetailB</Link>
       <br />
       <button onClick={onClickDetailA}>DetailA</button>
+      <br />
+      <button onClick={onClickDetailB}>DetailB</button>
     </div>
   );
 };
